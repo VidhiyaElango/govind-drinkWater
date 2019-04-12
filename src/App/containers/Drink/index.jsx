@@ -24,13 +24,13 @@ class Drink extends Component{
                             <td>Govidnaraj</td>
                             <td>Drink Water Daily</td>
                             <td>00:10</td>
-                            <td><a href="#">Edit</a></td>
+                            <td><a href="/edit">Edit</a></td>
                         </tr>
                         <tr>
                             <td>Arun </td>
                             <td>Drink Water Daily</td>
                             <td>00:10</td>
-                            <td><a href="#">Edit</a></td>
+                            <td><a href="/edit">Edit</a></td>
                         </tr>
                         </tbody>
                     </table>
