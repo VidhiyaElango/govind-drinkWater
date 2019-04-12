@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Drink from './App/containers/Drink';
 import Edit from './App/containers/Drink/edit';
+import Add from './App/containers/Drink/add';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -12,6 +13,7 @@ const routing = (
       <div>
         <Route exact path="/" component={Drink} />
         <Route path="/edit" component={Edit} />
+        <Route path="/add" component={Add} />
       </div>
     </Router>
   )
