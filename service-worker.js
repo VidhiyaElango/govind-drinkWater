@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/govind-drinkWater/precache-manifest.01b0039ce7cae0336be2cf88dfdbd22c.js"
+  "/govind-drinkWater/precache-manifest.96229ebd5d4480b97b8b58d74f200501.js"
 );
 
 workbox.clientsClaim();
