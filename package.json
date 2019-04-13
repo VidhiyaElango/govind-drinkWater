@@ -18,7 +18,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://VidhiyaElango.github.io/govind-drinkWater",
+  "homepage": "https://vidhiyaelango.github.io/govind-drinkWater/",
   "eslintConfig": {
     "extends": "react-app"
   },
