@@ -52,17 +52,19 @@ class DirnkListItem extends Component{
                     <td >{this.props.name}</td>
                     <td>Drink Water Daily</td>
                     <td>{this.state.time > 0?this.state.time:"Please Drink"}</td>
-                    <td><a href="/edit">Edit</a> | <a href="#" onClick={this.reset}>Drank</a></td>
+                    <td>
+                        <a href="/edit">Edit</a> | <a href="#" onClick={this.reset}>Drank</a>
+                        <ReactNotifications
+                            onRef={ref => (this.n = ref)} // Required
+                            title={"Hey "+this.props.name} // Required
+                            body="Drink Water Daily"
+                            icon={logo_bl}
+                            tag="abcdef"
+                            timeout="2000"
+                            onClick={event => this.handleClick(event)}
+                            />
+                    </td>
                 </tr>
-                <ReactNotifications
-                onRef={ref => (this.n = ref)} // Required
-                title={"Hey "+this.props.name} // Required
-                body="Drink Water Daily"
-                icon={logo_bl}
-                tag="abcdef"
-                timeout="2000"
-                onClick={event => this.handleClick(event)}
-                />
             </>
         );
     }

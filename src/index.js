@@ -7,7 +7,7 @@ import Edit from './App/containers/Drink/edit';
 import Add from './App/containers/Drink/add';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
 const routing = (
     <Router>
       <div>
