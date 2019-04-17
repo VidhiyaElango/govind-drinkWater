@@ -16,7 +16,7 @@ class Header extends Component{
                             </li>
                         </ul>
                         <form className="form-inline mt-2 mt-md-0 pull-left">
-                            <input className="form-control mr-sm-2" placeholder="New Alert" />
+                            <input className="form-control mr-sm-2" placeholder="Name" />
                             <button className="btn btn-outline-success" type="Button">Add</button>
                         </form>
                     </div>

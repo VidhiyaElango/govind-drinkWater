@@ -9,13 +9,15 @@ class Drink extends Component{
                 <th>Name</th>
                 <th>Description</th>
                 <th>Time</th>
+                <th>Drank</th>
                 <th>Action</th>
             </tr>
             </thead>
             <tbody>
-                <DirnkListItem name="Govidnarj" time="20"></DirnkListItem>
-                <DirnkListItem name="Arun" time="10"></DirnkListItem>
-                <DirnkListItem name="Ravi" time="5"></DirnkListItem>
+                {this.props.list.map((i,k) => {console.log(i);
+                        return <DirnkListItem key={k} name={i.name} time={i.time} desc={i.desc}></DirnkListItem>;
+                    }
+                )}
             </tbody>
         </table>
         );

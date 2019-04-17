@@ -8,14 +8,12 @@ class DirnkListItem extends Component{
            time: props.time,
            notication: false
          };
-        this.editAge = this.editAge.bind(this);
+        this.setDrinkTimmer = this.setDrinkTimmer.bind(this);
         this.reset = this.reset.bind(this);
         this.showNotifications = this.showNotifications.bind(this);
         this.handleClick = this.handleClick.bind(this);
-
-        this.editAge();
      }
-    editAge() {
+    setDrinkTimmer() {
         setInterval(()=>{
             console.log(this.state.notication);
             if(this.state.time > 0){
@@ -50,14 +48,15 @@ class DirnkListItem extends Component{
             <>
                 <tr className={this.state.time > 0 ? 'text-success' : "text-danger"}>
                     <td >{this.props.name}</td>
-                    <td>Drink Water Daily</td>
+                    <td>{this.props.desc}</td>
                     <td>{this.state.time > 0?this.state.time:"Please Drink"}</td>
+                    <td><a href="#" onClick={this.reset}>Drink</a></td>
                     <td>
-                        <a href="/edit">Edit</a> | <a href="#" onClick={this.reset}>Drank</a>
+                        <a href="#/edit">Edit</a> | <a href="#" onClick={this.reset}>Delete</a>
                         <ReactNotifications
                             onRef={ref => (this.n = ref)} // Required
                             title={"Hey "+this.props.name} // Required
-                            body="Drink Water Daily"
+                            body={this.props.desc}
                             icon={logo_bl}
                             tag="abcdef"
                             timeout="2000"
@@ -67,6 +66,9 @@ class DirnkListItem extends Component{
                 </tr>
             </>
         );
+    }
+    componentDidMount(){
+        this.setDrinkTimmer();
     }
 }
 export default DirnkListItem;
