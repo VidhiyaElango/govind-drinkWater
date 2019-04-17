@@ -1,26 +1,26 @@
 self.__precacheManifest = [
   {
-    "revision": "3403bb1d7d92f62661b4",
+    "revision": "941a85c48eec16daa092",
     "url": "/govind-drinkWater/static/css/main.c2571382.chunk.css"
   },
   {
-    "revision": "3403bb1d7d92f62661b4",
-    "url": "/govind-drinkWater/static/js/main.52a5bfa0.chunk.js"
+    "revision": "941a85c48eec16daa092",
+    "url": "/govind-drinkWater/static/js/main.e4b7a13f.chunk.js"
   },
   {
     "revision": "f1fc37f492c7ff717493",
     "url": "/govind-drinkWater/static/js/runtime~main.cc1ba082.js"
   },
   {
-    "revision": "73b69d56e8e422070833",
+    "revision": "a2916827eea4bdf7af8f",
     "url": "/govind-drinkWater/static/css/2.07b8b5d8.chunk.css"
   },
   {
-    "revision": "73b69d56e8e422070833",
-    "url": "/govind-drinkWater/static/js/2.1689b167.chunk.js"
+    "revision": "a2916827eea4bdf7af8f",
+    "url": "/govind-drinkWater/static/js/2.1b761f5d.chunk.js"
   },
   {
-    "revision": "4cafee0588123f13caa6e1122ffa414f",
+    "revision": "0cc4a0b3d13414792ea52e21d16a145d",
     "url": "/govind-drinkWater/index.html"
   }
 ];
