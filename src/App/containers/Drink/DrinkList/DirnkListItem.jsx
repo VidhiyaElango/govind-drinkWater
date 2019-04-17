@@ -12,6 +12,7 @@ class DirnkListItem extends Component{
         this.reset = this.reset.bind(this);
         this.showNotifications = this.showNotifications.bind(this);
         this.handleClick = this.handleClick.bind(this);
+        this.delete = this.delete.bind(this);
      }
     setDrinkTimmer() {
         setInterval(()=>{
@@ -43,6 +44,11 @@ class DirnkListItem extends Component{
         // Lastly, Close the notification
         this.n.close(event.target.tag);
       }
+      delete(){
+          if(window.confirm("Do you want to delete?")){
+            this.props.delete(this.props.id);
+          }
+      }
     render(){
         return(
             <>
@@ -52,7 +58,7 @@ class DirnkListItem extends Component{
                     <td>{this.state.time > 0?this.state.time:"Please Drink"}</td>
                     <td><a href="#" onClick={this.reset}>Drink</a></td>
                     <td>
-                        <a href="#/edit">Edit</a> | <a href="#" onClick={this.reset}>Delete</a>
+                        <a href="#/edit">Edit</a> | <a href="#" onClick={this.delete}>Delete</a>
                         <ReactNotifications
                             onRef={ref => (this.n = ref)} // Required
                             title={"Hey "+this.props.name} // Required
